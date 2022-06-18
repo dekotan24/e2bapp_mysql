@@ -40,6 +40,7 @@ namespace e2bapp
 			this.reloadButton = new System.Windows.Forms.Button();
 			this.configButton = new System.Windows.Forms.Button();
 			this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+			this.radioSaveButton = new System.Windows.Forms.Button();
 			this.creditLabel = new System.Windows.Forms.Label();
 			this.gitLabel = new System.Windows.Forms.LinkLabel();
 			this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -57,16 +58,15 @@ namespace e2bapp
 			this.bookNameLabel = new System.Windows.Forms.Label();
 			this.isbnLabel = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
-			this.radioSaveButton = new System.Windows.Forms.Button();
 			this.statLabel = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
-			this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+			this.volumeText = new System.Windows.Forms.NumericUpDown();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.coverImg)).BeginInit();
 			this.flowLayoutPanel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.volumeText)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// groupBox1
@@ -154,6 +154,16 @@ namespace e2bapp
 			this.flowLayoutPanel1.Name = "flowLayoutPanel1";
 			this.flowLayoutPanel1.Size = new System.Drawing.Size(278, 35);
 			this.flowLayoutPanel1.TabIndex = 11;
+			// 
+			// radioSaveButton
+			// 
+			this.radioSaveButton.Location = new System.Drawing.Point(140, 3);
+			this.radioSaveButton.Name = "radioSaveButton";
+			this.radioSaveButton.Size = new System.Drawing.Size(60, 29);
+			this.radioSaveButton.TabIndex = 30;
+			this.radioSaveButton.Text = "保存";
+			this.radioSaveButton.UseVisualStyleBackColor = true;
+			this.radioSaveButton.Click += new System.EventHandler(this.radioSaveButton_Click);
 			// 
 			// creditLabel
 			// 
@@ -327,16 +337,6 @@ namespace e2bapp
 			this.label1.TabIndex = 25;
 			this.label1.Text = "追加日時";
 			// 
-			// radioSaveButton
-			// 
-			this.radioSaveButton.Location = new System.Drawing.Point(140, 3);
-			this.radioSaveButton.Name = "radioSaveButton";
-			this.radioSaveButton.Size = new System.Drawing.Size(60, 29);
-			this.radioSaveButton.TabIndex = 30;
-			this.radioSaveButton.Text = "保存";
-			this.radioSaveButton.UseVisualStyleBackColor = true;
-			this.radioSaveButton.Click += new System.EventHandler(this.radioSaveButton_Click);
-			// 
 			// statLabel
 			// 
 			this.statLabel.AutoSize = true;
@@ -357,20 +357,20 @@ namespace e2bapp
 			this.label2.TabIndex = 27;
 			this.label2.Text = "巻数";
 			// 
-			// numericUpDown1
+			// volumeText
 			// 
-			this.numericUpDown1.Location = new System.Drawing.Point(569, 287);
-			this.numericUpDown1.Name = "numericUpDown1";
-			this.numericUpDown1.ReadOnly = true;
-			this.numericUpDown1.Size = new System.Drawing.Size(193, 19);
-			this.numericUpDown1.TabIndex = 14;
+			this.volumeText.Location = new System.Drawing.Point(569, 287);
+			this.volumeText.Name = "volumeText";
+			this.volumeText.ReadOnly = true;
+			this.volumeText.Size = new System.Drawing.Size(193, 19);
+			this.volumeText.TabIndex = 14;
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 447);
-			this.Controls.Add(this.numericUpDown1);
+			this.Controls.Add(this.volumeText);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.statLabel);
 			this.Controls.Add(this.label1);
@@ -405,7 +405,7 @@ namespace e2bapp
 			this.flowLayoutPanel1.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.volumeText)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -441,7 +441,7 @@ namespace e2bapp
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label statLabel;
 		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.NumericUpDown numericUpDown1;
+		private System.Windows.Forms.NumericUpDown volumeText;
 	}
 }
 

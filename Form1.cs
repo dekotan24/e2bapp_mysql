@@ -307,10 +307,12 @@ namespace e2bapp
 				string name = dt.Rows[bookList.SelectedIndex][0].ToString();
 				string isbn13 = dt.Rows[bookList.SelectedIndex][1].ToString();
 				string isbn10 = dt.Rows[bookList.SelectedIndex][2].ToString();
+				string volume = dt.Rows[bookList.SelectedIndex][3].ToString();
 				string stat = dt.Rows[bookList.SelectedIndex][4].ToString();
 				string date = dt.Rows[bookList.SelectedIndex][5].ToString();
 				nameText.Text = name;
 				isbnText.Text = isbn13;
+				volumeText.Value = Convert.ToInt32(volume);
 				addDateText.Text = date;
 				if (stat == "2")
 				{
