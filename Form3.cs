@@ -203,5 +203,14 @@ namespace e2bapp
 		{
 			dateText.Value = DateTime.Now;
 		}
+
+		private void isbnText_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			//Enter押下で検索を実行
+			if (e.KeyChar == (char)Keys.Enter)
+			{
+				getButton_Click(sender, e);
+			}
+		}
 	}
 }

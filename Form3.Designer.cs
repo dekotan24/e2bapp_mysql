@@ -81,6 +81,7 @@ namespace e2bapp
 			this.isbnText.Name = "isbnText";
 			this.isbnText.Size = new System.Drawing.Size(272, 33);
 			this.isbnText.TabIndex = 2;
+			this.isbnText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.isbnText_KeyPress);
 			// 
 			// ISBN
 			// 

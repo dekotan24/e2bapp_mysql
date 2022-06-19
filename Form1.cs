@@ -398,13 +398,14 @@ namespace e2bapp
 		/// <param name="e"></param>
 		private void addButton_Click(object sender, EventArgs e)
 		{
+			if (!File.Exists(Var.ConfigPath))
+			{
+				return;
+			}
 			// 追加ボタン押下時イベント
 			addForm.ShowDialog();
 			// 再読込み
-			if (File.Exists(Var.ConfigPath))
-			{
-				loadItem();
-			}
+			loadItem();
 
 		}
 
