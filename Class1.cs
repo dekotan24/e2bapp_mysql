@@ -28,8 +28,8 @@ namespace e2bapp
 		public partial class Var
 		{
 			protected static readonly string appName = "e2bapp";
-			protected static readonly string appVer = "1.01";
-			protected static readonly string appBuild = "2.22.06.18";
+			protected static readonly string appVer = "1.02";
+			protected static readonly string appBuild = "3.22.06.19";
 			protected static readonly string baseDir = AppDomain.CurrentDomain.BaseDirectory;
 			protected static readonly string configPath = AppDomain.CurrentDomain.BaseDirectory + "config.ini";
 

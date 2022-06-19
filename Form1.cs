@@ -247,6 +247,11 @@ namespace e2bapp
 			StringBuilder whereSb = new StringBuilder();
 			StringBuilder orderSb = new StringBuilder();
 
+			if (!File.Exists(Var.ConfigPath))
+			{
+				return;
+			}
+
 			if (searchTarget.Length != 0)
 			{
 				// 検索条件分岐
@@ -316,7 +321,7 @@ namespace e2bapp
 				addDateText.Text = date;
 				if (stat == "2")
 				{
-					radioButton1.Checked = true;
+					radioButton3.Checked = true;
 				}
 				else if (stat == "1")
 				{

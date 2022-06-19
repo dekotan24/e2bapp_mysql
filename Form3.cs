@@ -63,6 +63,11 @@ namespace e2bapp
 			{
 				MessageBox.Show("詳細取得中にエラーが発生しました。\nこのエラーは通常、ネットワークに接続されていない場合や、Amazon上にデータが存在しない場合に発生します。\n\nError:" + ae.InnerException + "\nErrMsg:" + ae.InnerExceptions, "", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
+			catch (FormatException fe)
+			{
+				volumeText.Value = 1;
+				Var.WriteErrorLog("巻数の取得に失敗しました。", Var.AppName, fe.Message);
+			}
 		}
 
 		private void cancelButton_Click(object sender, EventArgs e)
