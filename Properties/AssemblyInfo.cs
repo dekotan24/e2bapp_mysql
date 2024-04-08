@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("dekosoft")]
 [assembly: AssemblyProduct("e2bapp")]
-[assembly: AssemblyCopyright("Copyright © 2022 Ogura Deko All rights reserved.")]
+[assembly: AssemblyCopyright("Copyright © 2023 Ogura Deko and dekosoft All rights reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // すべての値を指定するか、次を使用してビルド番号とリビジョン番号を既定に設定できます
 // 既定値にすることができます:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("4.22.06.19")]
-[assembly: AssemblyFileVersion("1.0.3.0")]
+[assembly: AssemblyVersion("1.23.03.01")]
+[assembly: AssemblyFileVersion("1.0.0.0")]

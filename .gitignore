@@ -3,3 +3,12 @@
 ################################################################################
 
 /.vs/e2bapp
+/obj
+/bin/Debug
+/bin/e2blib.zip
+/bin/e2bapp.zip
+/bin/e2bapp
+*.ini
+/bin/Release/e2bapp.pdb
+/bin/Release/Google.Protobuf.pdb
+/bin/Release
