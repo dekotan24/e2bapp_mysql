@@ -61,6 +61,7 @@ namespace e2bapp
 			this.lastSearchISBNLink = new System.Windows.Forms.LinkLabel();
 			this.deleteRegistButton = new System.Windows.Forms.Button();
 			this.editRegistButton = new System.Windows.Forms.Button();
+			this.notGetVolumeCheck = new System.Windows.Forms.CheckBox();
 			((System.ComponentModel.ISupportInitialize)(this.volumeText)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.coverImg)).BeginInit();
 			this.groupBox1.SuspendLayout();
@@ -215,7 +216,7 @@ namespace e2bapp
 			// 
 			this.radioButton2.AutoSize = true;
 			this.radioButton2.Font = new System.Drawing.Font("游ゴシック", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.radioButton2.Location = new System.Drawing.Point(264, 372);
+			this.radioButton2.Location = new System.Drawing.Point(219, 372);
 			this.radioButton2.Name = "radioButton2";
 			this.radioButton2.Size = new System.Drawing.Size(60, 25);
 			this.radioButton2.TabIndex = 13;
@@ -226,7 +227,7 @@ namespace e2bapp
 			// 
 			this.radioButton3.AutoSize = true;
 			this.radioButton3.Font = new System.Drawing.Font("游ゴシック", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.radioButton3.Location = new System.Drawing.Point(370, 372);
+			this.radioButton3.Location = new System.Drawing.Point(285, 372);
 			this.radioButton3.Name = "radioButton3";
 			this.radioButton3.Size = new System.Drawing.Size(60, 25);
 			this.radioButton3.TabIndex = 14;
@@ -312,7 +313,7 @@ namespace e2bapp
 			this.groupBox1.Controls.Add(this.ndlEngine);
 			this.groupBox1.Controls.Add(this.amazonEngine);
 			this.groupBox1.Font = new System.Drawing.Font("游ゴシック", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.groupBox1.Location = new System.Drawing.Point(325, 266);
+			this.groupBox1.Location = new System.Drawing.Point(361, 294);
 			this.groupBox1.Name = "groupBox1";
 			this.groupBox1.Size = new System.Drawing.Size(154, 101);
 			this.groupBox1.TabIndex = 22;
@@ -361,9 +362,9 @@ namespace e2bapp
 			this.volumeGetType.Controls.Add(this.volume_db);
 			this.volumeGetType.Controls.Add(this.volume_title);
 			this.volumeGetType.Font = new System.Drawing.Font("游ゴシック", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-			this.volumeGetType.Location = new System.Drawing.Point(485, 267);
+			this.volumeGetType.Location = new System.Drawing.Point(521, 294);
 			this.volumeGetType.Name = "volumeGetType";
-			this.volumeGetType.Size = new System.Drawing.Size(132, 100);
+			this.volumeGetType.Size = new System.Drawing.Size(132, 101);
 			this.volumeGetType.TabIndex = 23;
 			this.volumeGetType.TabStop = false;
 			this.volumeGetType.Text = "巻数取得方法";
@@ -429,11 +430,23 @@ namespace e2bapp
 			this.editRegistButton.UseVisualStyleBackColor = true;
 			this.editRegistButton.Click += new System.EventHandler(this.editRegistButton_Click);
 			// 
+			// notGetVolumeCheck
+			// 
+			this.notGetVolumeCheck.AutoSize = true;
+			this.notGetVolumeCheck.Font = new System.Drawing.Font("游ゴシック", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+			this.notGetVolumeCheck.Location = new System.Drawing.Point(297, 269);
+			this.notGetVolumeCheck.Name = "notGetVolumeCheck";
+			this.notGetVolumeCheck.Size = new System.Drawing.Size(122, 20);
+			this.notGetVolumeCheck.TabIndex = 27;
+			this.notGetVolumeCheck.Text = "巻数を取得しない";
+			this.notGetVolumeCheck.UseVisualStyleBackColor = true;
+			// 
 			// Add
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(990, 522);
+			this.Controls.Add(this.notGetVolumeCheck);
 			this.Controls.Add(this.editRegistButton);
 			this.Controls.Add(this.deleteRegistButton);
 			this.Controls.Add(this.lastSearchISBNLink);
@@ -513,5 +526,6 @@ namespace e2bapp
 		private System.Windows.Forms.LinkLabel lastSearchISBNLink;
 		private System.Windows.Forms.Button deleteRegistButton;
 		private System.Windows.Forms.Button editRegistButton;
+		private System.Windows.Forms.CheckBox notGetVolumeCheck;
 	}
 }

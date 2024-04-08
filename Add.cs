@@ -183,7 +183,7 @@ namespace e2bapp
 				nameText.Text = title.Trim();
 				dateText.Value = DateTime.Now;
 
-				if (volume <= 1000 && volume > 0)
+				if (volume <= 1000 && volume > 0 && notGetVolumeCheck.Checked)
 				{
 					volumeText.Value = volume;
 				}
